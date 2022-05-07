@@ -5,7 +5,7 @@ export const CONTAINER_ABOUT = styled.div`
   background: #122c4a;
   text-align: left;
   height: auto;
-  padding: 50px 0px;
+  padding: 6em 0px;
   p {
     color: #cfdce5;
     font-weight: 400;
@@ -28,7 +28,7 @@ export const CONTAINER_ABOUT = styled.div`
   }
 
   @media screen and (min-width: 500px) {
-    height: 600px;
+    height: auto;
     padding: 70px 0px;
 
     p {

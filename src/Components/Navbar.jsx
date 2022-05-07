@@ -65,29 +65,29 @@ export default function Navbar() {
               duration: 5,
             }}
           >
-            <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <motion.a whileHover={{ scale: 1.2 }} href="#about">
               About me
             </motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <motion.a whileHover={{ scale: 1.2 }} href="#projects">
               Projects
             </motion.a>
-            <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <motion.a whileHover={{ scale: 1.2 }} href="#contact">
               Contact
             </motion.a>
           </NOT_DEPLOY>
         </NOT_RESPONSIVE>
+        <motion.div id="deploy" hidden layout className="box">
+          <DEPLOY
+            animate={isOpen ? "open" : "closed"}
+            transition={{ duration: 0.3 }}
+            variants={variants}
+          >
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </DEPLOY>
+        </motion.div>
       </CONTAINER_NAVBAR>
-      <motion.div id="deploy" hidden layout className="box">
-        <DEPLOY
-          animate={isOpen ? "open" : "closed"}
-          transition={{ duration: 0.3 }}
-          variants={variants}
-        >
-          <a href="#">About me</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </DEPLOY>
-      </motion.div>
     </>
   );
 }

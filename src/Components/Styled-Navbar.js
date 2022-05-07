@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 export const CONTAINER_NAVBAR = styled.nav`
   background: #12090e;
+  width: 100%;
+  position: fixed;
 `;
 
 export const NOT_RESPONSIVE = styled.div`
