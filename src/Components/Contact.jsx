@@ -5,7 +5,7 @@ import { CONTACT, CONTACT_FORM, CONTAINER_CONTACT } from "./Styled-Contact";
 export default function Contact() {
   return (
     <CONTAINER_CONTACT>
-      <h3>Contact</h3>
+      <h3>Contacto</h3>
       <CONTACT>
         <p>
           Puedes contactarme enviando un mensaje por aqui o directamente en mi

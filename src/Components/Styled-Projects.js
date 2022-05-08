@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const CONTAINER_PROJECTS = styled.div`
-  background: #839ae5;
-  padding-top: 50px;
+  background: #4C8492;
+  padding-top: 70px;
   width: 100%;
   h3 {
     padding-top: 15px;
@@ -12,6 +12,7 @@ export const CONTAINER_PROJECTS = styled.div`
     font-size: 30px;
     color: #181f3c;
     text-decoration: underline;
+    margin-bottom: 20px;
   }
 `;
 
@@ -23,6 +24,7 @@ export const PROJECT = styled(motion.div)`
   margin: auto;
 
   h2 {
+    color: #FFC93C;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 10px;

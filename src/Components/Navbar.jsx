@@ -66,13 +66,13 @@ export default function Navbar() {
             }}
           >
             <motion.a whileHover={{ scale: 1.2 }} href="#about">
-              About me
+              Sobre mi
             </motion.a>
             <motion.a whileHover={{ scale: 1.2 }} href="#projects">
-              Projects
+              Proyectos
             </motion.a>
             <motion.a whileHover={{ scale: 1.2 }} href="#contact">
-              Contact
+              Contacto
             </motion.a>
           </NOT_DEPLOY>
         </NOT_RESPONSIVE>
@@ -82,9 +82,9 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             variants={variants}
           >
-            <a href="#about">About me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" onClick={handleMenu}>Sobre mi</a>
+            <a href="#projects" onClick={handleMenu}>Proyectos</a>
+            <a href="#contact" onClick={handleMenu}>Contacto</a>
           </DEPLOY>
         </motion.div>
       </CONTAINER_NAVBAR>

@@ -25,7 +25,7 @@ const projects = [
 export default function Projects() {
   return (
     <CONTAINER_PROJECTS>
-      <h3>Projects</h3>
+      <h3>Proyectos</h3>
       {projects.map((project) => {
         return (
           <PROJECT
