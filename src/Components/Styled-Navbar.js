@@ -5,6 +5,18 @@ export const CONTAINER_NAVBAR = styled.nav`
   background: #12090e;
   width: 100%;
   position: fixed;
+  .cv {
+    display: none;
+  }
+  @media screen and (min-width: 650px) {
+    display: flex;
+    align-items: center;
+    
+    .cv {
+      display: block;
+      margin-right: 20px;
+    }
+  }
 `;
 
 export const NOT_RESPONSIVE = styled.div`
@@ -54,7 +66,7 @@ export const DEPLOY = styled(motion.div)`
   flex-flow: column;
   background: #12090e;
   width: 200px;
-  height: 100px;
+  height: 150px;
   a {
     text-decoration: none;
     color: white;
@@ -63,11 +75,6 @@ export const DEPLOY = styled(motion.div)`
     font-weight: 400;
   }
 
-  @media screen and (min-width: 450px) {
-    a {
-      /* width: 40%; */
-    }
-  }
 
   @media screen and (min-width: 650px) {
     display: none;

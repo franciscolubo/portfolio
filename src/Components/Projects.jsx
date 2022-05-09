@@ -26,9 +26,9 @@ export default function Projects() {
   return (
     <CONTAINER_PROJECTS>
       <h3>Proyectos</h3>
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         return (
-          <PROJECT
+          <PROJECT key={i}
             whileInView={{ scale: [0, 1], duration: 5 }}
             viewport={{ once: true }}
           >

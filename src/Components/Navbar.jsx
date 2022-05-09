@@ -5,6 +5,7 @@ import {
   NOT_RESPONSIVE,
 } from "./Styled-Navbar";
 import { motion, useCycle } from "framer-motion";
+import pdf from '../CV-Francisco-Lubo.pdf'
 
 const variants = {
   open: {
@@ -85,8 +86,14 @@ export default function Navbar() {
             <a href="#about" onClick={handleMenu}>Sobre mi</a>
             <a href="#projects" onClick={handleMenu}>Proyectos</a>
             <a href="#contact" onClick={handleMenu}>Contacto</a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB1UlEQVRoge2YMUoDQRiFvxGJIGIlYh1QERGsBBPFA1h7Aj2BgrfQE3iDgIWFhZUgktYiYCHoASyFgCI+mxhCzM7szmTiIPNVu+z8O+/t7L6ZWcikhbFdlKRJCSmLMWak5qlJC4lFNpIa2UhqhBrpABvAPHAMvAYrioHcHA21Py1RE0SR1tAReRs67zraN40DYMdHSKiRmaHzhTH056Vp2qdogJWh82VH+zvL2xFE6BKlC2waY54kbQP3rnuGEmuJMgvs944PiGzCG0eAfEpqSVrqtV2RdCPpy1LTKNFn0ye1fI20Ja0W1GxJeiyocyaSpF0fI77fSN0Y82Kp2wNuXaJ9KPpG8n4kNbKR1Chr5DyqijFQyogx5gQ4BD7iyvHHlEmmn6SQ1AQugcXYwlxafmGbfEZNQpLqkjqOEucMXoQ8Z/b+q+XYIww+kWegAVxb9ISEiFdt/9UqHLICJNWAB2DNp2NfxjohSpoDWkzYhI3+xsq6IBt4CpLqwBWwHldaNSqNSC+12iRmwslgUkg6lPReJuWqppYrqSqllqOjM+ACqJXUVvXbC14q5WV8amQjqRHLiPPXaGq/TGPc12+tZbuYU+sPyEZSIxtJjWwkNf6NkUxqfAO2SG7ysLGFvgAAAABJRU5ErkJggg=="/></a>
           </DEPLOY>
         </motion.div>
+        <div className="cv">
+          <a href={pdf} target="_blank" rel="noopener noreferrer" download="CV-Francisco-Lubo.pdf">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB1UlEQVRoge2YMUoDQRiFvxGJIGIlYh1QERGsBBPFA1h7Aj2BgrfQE3iDgIWFhZUgktYiYCHoASyFgCI+mxhCzM7szmTiIPNVu+z8O+/t7L6ZWcikhbFdlKRJCSmLMWak5qlJC4lFNpIa2UhqhBrpABvAPHAMvAYrioHcHA21Py1RE0SR1tAReRs67zraN40DYMdHSKiRmaHzhTH056Vp2qdogJWh82VH+zvL2xFE6BKlC2waY54kbQP3rnuGEmuJMgvs944PiGzCG0eAfEpqSVrqtV2RdCPpy1LTKNFn0ye1fI20Ja0W1GxJeiyocyaSpF0fI77fSN0Y82Kp2wNuXaJ9KPpG8n4kNbKR1Chr5DyqijFQyogx5gQ4BD7iyvHHlEmmn6SQ1AQugcXYwlxafmGbfEZNQpLqkjqOEucMXoQ8Z/b+q+XYIww+kWegAVxb9ISEiFdt/9UqHLICJNWAB2DNp2NfxjohSpoDWkzYhI3+xsq6IBt4CpLqwBWwHldaNSqNSC+12iRmwslgUkg6lPReJuWqppYrqSqllqOjM+ACqJXUVvXbC14q5WV8amQjqRHLiPPXaGq/TGPc12+tZbuYU+sPyEZSIxtJjWwkNf6NkUxqfAO2SG7ysLGFvgAAAABJRU5ErkJggg=="/>
+          </a>
+        </div>
       </CONTAINER_NAVBAR>
     </>
   );
