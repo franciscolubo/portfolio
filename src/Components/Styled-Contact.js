@@ -42,7 +42,7 @@ export const CONTACT = styled.div`
   }
 `;
 
-export const CONTACT_FORM = styled.div`
+export const CONTACT_FORM = styled.form`
   display: flex;
   flex-direction: column;
 
