@@ -63,6 +63,12 @@ export const CONTACT_FORM = styled.form`
       min-width: 100%;
       min-height: 50px;
     }
+
+    small {
+      color: #c3d5e5;
+      text-align: left;
+      position: static;
+    }
   }
 
   button {
