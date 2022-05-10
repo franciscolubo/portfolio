@@ -12,10 +12,10 @@ export default function About() {
         </h1>
         <p>
           Soy un joven estudiando y amante de todos los aspectos de la
-          tecnologia, recientemente finalize el bootcamp de Henry, en el cual
-          aprendi a trabajar con diversas tecnologias y sobre todo, trabajar
-          bajo presion. Por esto siento que estoy preparado para aportar mis
-          conocimientos en alguna empresa, ademas de seguir aprendiendo y
+          tecnología, recientemente finalice el bootcamp de Henry, en el cual
+          aprendí a trabajar con diversas tecnologías y sobre todo, trabajar
+          bajo presión. Por esto siento que estoy preparado para aportar mis
+          conocimientos en alguna empresa, además de seguir aprendiendo y
           desarrollarme como profesional
         </p>
       </TEXT_ABOUT>
