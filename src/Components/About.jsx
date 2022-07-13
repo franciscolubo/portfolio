@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { CONTAINER_ABOUT, TEXT_ABOUT } from "./Styled-About";
 
 export default function About() {
@@ -11,12 +10,12 @@ export default function About() {
           <strong>Full-Stack</strong> Web Developer
         </h1>
         <p>
-          Soy un joven estudiando y amante de todos los aspectos de la
+          Soy un joven estudiante y amante de la
           tecnología, recientemente finalice el bootcamp de Henry, en el cual
           aprendí a trabajar con diversas tecnologías y sobre todo, trabajar
           bajo presión. Por esto siento que estoy preparado para aportar mis
           conocimientos en alguna empresa, además de seguir aprendiendo y
-          desarrollarme como profesional
+          desarrollarme como profesional.
         </p>
       </TEXT_ABOUT>
     </CONTAINER_ABOUT>
