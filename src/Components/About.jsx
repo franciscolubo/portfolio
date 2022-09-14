@@ -1,23 +1,20 @@
-import React from "react";
-import { CONTAINER_ABOUT, TEXT_ABOUT } from "./Styled-About";
+import { CONTAINER_ABOUT } from "./styles/Styled-About";
 
 export default function About() {
   return (
     <CONTAINER_ABOUT>
-      <TEXT_ABOUT animate={{ scale: [0, 1], duration: 5 }}>
-        <p>Hola, soy Francisco Lubo</p>
-        <h1>
-          <strong>Full-Stack</strong> Web Developer
-        </h1>
+        <div>
+          <h4>Hola, soy Francisco Lubo</h4>
+          <h1>
+            <strong>Full-Stack</strong> Web Developer
+          </h1>
+        </div>
+
         <p>
-          Soy un joven estudiante y amante de la
-          tecnología, recientemente finalice el bootcamp de Henry, en el cual
-          aprendí a trabajar con diversas tecnologías y sobre todo, trabajar
-          bajo presión. Por esto siento que estoy preparado para aportar mis
-          conocimientos en alguna empresa, además de seguir aprendiendo y
-          desarrollarme como profesional.
+        Tomo este espacio para contar un poco quien soy. Vivo en Argentina y estudio sistemas de la informacion, me encanta todo lo relacionado a la tecnologia, ya sea tanto hardware como software, cuando escribi mis primeras lineas de codigo recuerdo que no entendia muy bien lo que hacia pero gracias a la experiencia que he adquirido mediante el estudio y esfuerzo hoy en dia puedo decir que soy un programador, un Full-Stack Web Developer.
+        <br /><br />
+        Pase por el bootcamp de Henry, luego de muchos esfuerzo y estudio, con algunos proyectos hechos independientemente en los cuales pude seguir mejorando, mas la presion que el bootcamp ejercia, me siento preparado para obtener mi primer empleo formal en el mundo de IT, en el cual pueda seguir desarrollandome y mejorando dia a dia como programador.
         </p>
-      </TEXT_ABOUT>
     </CONTAINER_ABOUT>
   );
 }
