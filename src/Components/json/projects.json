@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "title": "PF - E-commerce",
+            "description": "E-commerce de productos electronicos realizado para el bootcamp de Henry (Proyecto final en grupo), realizado con otras seis personas. Posee un CRUD completo, ademas de filtros, autenticacion (tambien con Google), pagar, entre otras cosas.",
+            "image": "../../pfecommerce.png",
+            "altImage": "pf e-commerce image not found",
+            "video": "https://www.youtube.com/watch?v=Xg8fcmarpxg",
+            "altVideo": "pf e-commerce video not found"
+        },
+        {
+            "title": "Bus App",
+            "description": "Una pequeña app la cual desarrolle con React Native por dos razones, primero que nada queria aprender una tecnologica que venia viendo hace un tiempo, el desarrollar para mobile y la otra razon es que queria hacer algo funcional, por eso tome este proyecto, con el cual podria usar cada vez que viajara de mi ciudad a la otra.",
+            "image": "../../appbus.png",
+            "altImage": "app bus image not found"
+        },
+        {
+            "title": "PI - Api Food",
+            "description": "Esta es una SPA (Single Page Application) en la cual estuve trabajando durante el bootcamp de Henry (Proyecto individual). Cuenta con un CRUD completo, ademas de diversos filtros.",
+            "image": "../../pifood.png",
+            "altImage": "pi food image not found",
+            "video": "https://www.youtube.com/watch?v=2O7TPCvDP_0",
+            "deploy": "https://pi-food-client-nine.vercel.app"
+        }
+    ]
+}

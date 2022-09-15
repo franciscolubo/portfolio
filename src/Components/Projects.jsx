@@ -1,32 +1,14 @@
 import { CONTAINER_PROJECTS, PROJECT, ProjectImage } from "./styles/Styled-Projects";
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    title: "PF - E-commerce",
-    description:
-      "E-commerce de productos electronicos realizado para el bootcamp de Henry (Proyecto final en grupo), realizado con otras seis personas. Posee un CRUD completo, ademas de filtros, autenticacion (tambien con Google), pagar, entre otras cosas.",
-    image: "../../pfecommerce.png",
-    altImage: "pf e-commerce image not found",
-    video: "https://www.youtube.com/watch?v=Xg8fcmarpxg",
-    altVideo: "pf e-commerce video not found"
-  },
-  {
-    title: "PI - Api Food",
-    description:
-      "Esta es una SPA (Single Page Application) en la cual estuve trabajando durante el bootcamp de Henry (Proyecto individual). Cuenta con un CRUD completo, ademas de diversos filtros.",
-    image: "../../pifood.png",
-    altImage: "pi food image not found",
-    video: "https://www.youtube.com/watch?v=2O7TPCvDP_0",
-    deploy: "https://pi-food-client-nine.vercel.app",
-  },
-];
+import projects from "./json/projects.json"
 
 export default function Projects() {
+
+  console.log(projects)
   return (
     <CONTAINER_PROJECTS>
       <h2>Proyectos</h2>
-      {projects.map((project, i) => {
+      {projects.projects.map((project, i) => {
         return (
           <PROJECT key={i}>
             <div>
@@ -53,7 +35,7 @@ export default function Projects() {
                 </a>
               )}
             </div>
-            <ProjectImage src={project.image} alt={project.alt} />
+            <ProjectImage src={project.image} alt={project.alt}/>
           </PROJECT>
         );
       })}

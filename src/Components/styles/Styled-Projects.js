@@ -56,6 +56,7 @@ export const PROJECT = styled.div`
       }
   }
 
+
   @media screen and (min-width: 700px) {
     display: flex;
     margin: 35px 0;

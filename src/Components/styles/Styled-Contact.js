@@ -68,7 +68,10 @@ export const FormContact = styled.form`
       }
       
     }
+  }
 
+  .button {
+    display: flex;
     button {
       width: 40%;
       margin: 10px auto;
@@ -129,7 +132,6 @@ export const FormContact = styled.form`
         width: 50%;
         height: 40px;
         font-weight: 600;
-        /* float: right; */
       }
     }
   }

@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import { motion } from "framer-motion";
 import { CONTAINER_CONTACT, FormContact, TitleContact } from "./styles/Styled-Contact";
 
 const validations = (form) => {
@@ -130,13 +129,10 @@ export default function Contact() {
                 ></textarea>
             </div>
           </div>
-          <div>
-          <motion.button 
-
-// whileTap={{ scale: 0.9}}
-type="submit">
-            ¡Enviar!
-          </motion.button>
+          <div className="button">
+            <button type="submit">
+              ¡Enviar!
+            </button>
           </div>
         </FormContact>
     </CONTAINER_CONTACT>
