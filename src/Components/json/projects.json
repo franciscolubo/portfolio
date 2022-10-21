@@ -15,6 +15,13 @@
             "altImage": "app bus image not found"
         },
         {
+            "title": "Ecommerce Test",
+            "description": "Un ecommerce que realize para una pequeña entrevista, con algunas funcionalidades basicas, realice algunos cambios para poder subirlo como propio, razones por la que decidi continuarlo, fueron para seguir aprendiendo MySQL y ademas desarrollar un proyecto vanilla Javascript.",
+            "image": "../../ecommerVanilla.png",
+            "altImage": "ecommerce test image not found",
+            "deploy": "https://lustrous-elf-356761.netlify.app"
+        },
+        {
             "title": "PI - Api Food",
             "description": "Esta es una SPA (Single Page Application) en la cual estuve trabajando durante el bootcamp de Henry (Proyecto individual). Cuenta con un CRUD completo, ademas de diversos filtros.",
             "image": "../../pifood.png",
