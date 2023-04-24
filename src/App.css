@@ -1,6 +1,8 @@
-.App {
-  background-image: url('https://img.freepik.com/vector-gratis/panorama-naranja-coral-degradado-abstracto-fondo-naturaleza-vectorial-horizontal-al-atardecer_105738-1783.jpg');
-  background-repeat: no-repeat;
+.App {  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./img/FondoPantalla.png");
   background-size: cover;
-  /* height: 100%; */
+  background-position: center center;
 }

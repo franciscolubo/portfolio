@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "title": "PF - E-commerce",
+      "description": "E-commerce de productos electronicos realizado para el bootcamp de Henry (Proyecto final en grupo), realizado con otras seis personas. Posee un CRUD completo, ademas de filtros, autenticacion (tambien con Google), pagar, entre otras cosas.",
+      "image": "../../pfecommerce.png",
+      "altImage": "pf e-commerce image not found",
+      "altVideo": "pf e-commerce video not found",
+      "github": "./github"
+    },
+    {
+      "title": "Bus App",
+      "description": "Una pequeña app la cual desarrolle con React Native por dos razones, primero que nada queria aprender una tecnologica que venia viendo hace un tiempo, el desarrollar para mobile y la otra razon es que queria hacer algo funcional, por eso tome este proyecto, con el cual podria usar cada vez que viajara de mi ciudad a la otra.",
+      "image": "../../appbus.png",
+      "altImage": "app bus image not found",
+      "github": "./github"
+    },
+    {
+      "title": "Ecommerce Test",
+      "description": "Un ecommerce que realize para una pequeña entrevista, con algunas funcionalidades basicas, realice algunos cambios para poder subirlo como propio, razones por la que decidi continuarlo, fueron para seguir aprendiendo MySQL y ademas desarrollar un proyecto vanilla Javascript.",
+      "image": "../../ecommerVanilla.png",
+      "altImage": "ecommerce test image not found",
+      "deploy": "https://lustrous-elf-356761.netlify.app",
+      "github": "./github"
+    },
+    {
+      "title": "PI - Api Food",
+      "description": "Esta es una SPA (Single Page Application) en la cual estuve trabajando durante el bootcamp de Henry (Proyecto individual). Cuenta con un CRUD completo, ademas de diversos filtros.",
+      "image": "../../pifood.png",
+      "altImage": "pi food image not found",
+      "deploy": "https://pi-food-client-nine.vercel.app",
+      "github": "./github"
+    }
+  ]
+}

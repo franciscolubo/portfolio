@@ -1,111 +1,56 @@
 import styled from "styled-components";
-
-export const CONTAINER_PROJECTS = styled.div`
-  width: 90%;
-  text-align: center;
-  margin: 20px auto;
+export const ContainerProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h2 {
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    color: #212121;
-    padding: 10px 0;
-    font-size: 25px;
-  }
-
-  @media screen and (min-width: 500px){
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-    }
-  }
-`;
-
-export const PROJECT = styled.div`
-  align-items: center;
-  border: 2px solid #000;
-  border-radius: 20px;
-  padding: 15px;
-  margin: 5px 0;
-  background-color: #fff;
-  opacity: 0.6;
-  transition: opacity 1s;
-  &:hover{
-    opacity: 1;
-  }
-
-  h3 {
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    color: #000;
-    padding: 8px 0;
-  }
-
-  p {
-    color: #212121;
-    font-weight: 400;
+    color: #a5924e;
     letter-spacing: 0.8px;
+    font-weight: 400;
     margin: 10px 0;
+    font-size: 20px;
   }
 
-  .a-img {
-      margin: 0 10px;
-
-      img {
-        width: 35px;
-      }
-  }
-
-
-  @media screen and (min-width: 700px) {
+  div {
     display: flex;
-    margin: 35px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+
+    margin: 40px 0;
+    img {
+      width: 90%;
+      height: 200px;
+    }
+
+    h4 {
+      color: #89887a;
+      margin: 15px 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #d6d7c5;
+      letter-spacing: 0.7px;
+    }
 
     div {
-      flex: .60;
-    }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
 
-    h3 {
-      font-weight: 600;
-      letter-spacing: 2px;
-      font-size: 22px;
-    }
-
-    .a-img {
-      img {
-        margin-top: 20px;
+      .icon {
+        background-color: #d6d7c5;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 0 15px;
       }
     }
-  }
-
-`;
-
-export const ProjectImage = styled.img`
-  width: 230px;
-  height: 230px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  margin: 20px 0;
-
-  @media screen and (min-width: 410px){
-    width: 270px;
-  }
-
-  @media screen and (min-width: 500px) {
-    width: 350px;
-  }
-
-  @media screen and (min-width: 700px) {
-    flex: .4;
-    width: 300px;
-    margin-left: 15px;
-  }
-
-  @media screen and (min-width: 900px) {
-    width: 250px;
-  }
-
-  @media screen and (min-width: 1100px) {
-    width: 200px;
   }
 `;

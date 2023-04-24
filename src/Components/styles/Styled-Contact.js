@@ -1,158 +1,90 @@
 import styled from "styled-components";
-
-export const CONTAINER_CONTACT = styled.div`
-  width: 90%;
-  margin: auto;
-  margin-bottom: 30px;
+export const ContainerContact = styled.div`
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 20px;
-  padding: 10px;      
 
-  p {
-    color: #212121;
-    letter-spacing: 0.8px;
-    
-    a {
-      color: #212121;
-      text-decoration: none;
-      font-weight: 600;
-    }
+  div {
+    width: 80%;
 
-    a:hover {
-      color: #000;
-    }
-  }
-
-  @media screen and (min-width: 500px){
-    div {
-      h2 {
-        font-weight: 700;
-        font-size: 30px;
-      }
+    h2 {
+      color: #a5924e;
+      letter-spacing: 0.8px;
+      font-weight: 400;
+      margin: 10px 0;
+      font-size: 20px;
     }
 
     p {
-      margin: 10px 0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      color: #d6d7c5;
+      margin-bottom: 15px;
     }
   }
-`;
 
-export const FormContact = styled.form`
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0;
+  .title-contact {
+    display: flex;
+    justify-content: center;
+  }
 
-  div {
-    div {
+  .text-information {
+    text-align: center;
+  }
+
+  .inputs {
+    label {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-      
-      label {
-        font-weight: 500;
-        color: #000
+      color: #d6d7c5;
+      margin: 15px 0;
+
+      p {
+        height: 5px;
+        strong {
+          color: #d97e2a;
+        }
       }
-      
-      input {
-        width: 60%;
+
+      span {
+        font-size: 10px;
+        color: grey;
       }
-      
+
       textarea {
-        min-width: 60%;
-        max-width: 60%;
-        min-height: 100px;
-        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 50px;
+        max-height: 100px;
       }
-      
+    }
+
+    .name-completly {
+      div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 48%;
+        }
+      }
     }
   }
-
   .button {
     display: flex;
+    justify-content: center;
+
     button {
-      width: 40%;
-      margin: 10px auto;
-      color: #000;
-      background-color: #fed897;
-      border: 1px solid #000;
-      border-radius: 3px;
-      transition: background-color 500ms;
-      cursor: pointer;
+      background-color: #131313;
+      border: none;
+      color: #d9d9d9;
+      width: 60px;
+      height: 25px;
     }
-    
-    button:hover{
-      background-color: #F7BB53;
-    }
-  }
 
-  @media screen and (min-width: 500px){
-    div {
-      div {
-        input {
-          width: 50%;
-        }
-        
-        textarea {
-          min-width: 50%;
-          max-width: 50%;
-          min-height: 100px;
-          max-height: 200px;
-        }
-      }
-
-      button {
-        width: 30%;
-      }
-    }
-  }
-
-  @media screen and (min-width: 750px){
-    flex-direction: row;
-
-    div {
-      width: 100%;
-      margin: auto;
-      div {
-        input {
-          width: 70%;
-        }
-        
-        textarea {
-          min-width: 70%;
-          max-width: 200px;
-          min-height: 69px;
-          max-height: 69px;
-        }
-      }
-
-      button {
-        width: 50%;
-        height: 40px;
-        font-weight: 600;
-      }
-    }
+    margin-bottom: 20px;
   }
 `;
-
-export const TitleContact = styled.div`
-    text-align: center;
-    margin-bottom: 30px;
-    h2 {
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      color: #212121;
-      padding: 10px 0;
-      font-size: 25px;
-    }
-
-    @media screen and (min-width: 500px){
-      h2 {
-        font-weight: 700;
-        font-size: 30px;
-      }
-    }
-`;
-

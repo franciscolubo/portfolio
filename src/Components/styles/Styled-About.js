@@ -1,74 +1,60 @@
-import styled from "styled-components";
+import styled from "styled-components";export const ContainerPrimary = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-export const CONTAINER_ABOUT = styled.div`
-    width: 90%;
-    margin: 20px auto;
-    padding-top: 5px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 20px;
-
-    h4 {
-        font-weight: 500;
-        letter-spacing: 1.7px;
-        color: #212121;
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
+  div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
     h1 {
-        font-weight: 700;
-        letter-spacing: 2px;
-        color: #212121;
-        margin: 10px 0;
-        strong {
-            color: #000;
-        }
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 23px;
+      color: #a5924e;
+      margin: 30px 0;
     }
 
     p {
-        color: #212121;
-        letter-spacing: 1px;
-        padding: 20px 0;
+      letter-spacing: 0.7px;
+      color: #d6d7c5;
+      margin-bottom: 15px;
+
+      .strong-name {
+        color: #d97e2a;
+      }
+
+      .strong-backend {
+        color: #000;
+      }
     }
 
-    @media screen and (min-width: 500px) {
-        h4 {
-            font-weight: 600;
-            letter-spacing: 2px;
-            font-size: 22px;
-            margin: 20px 0;
-        }
-
-        h1 {
-            font-weight: 800;
-            letter-spacing: 2.5px;
-            font-size: 42px;
-        }
-
-        p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
+    button {
+      text-decoration: none;
+      color: #000;
+      letter-spacing: 0.7px;
+      margin: 20px 0;
+      background: transparent;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
     }
+  }
 
-    @media screen and (min-width: 700px) {
-        div {
-            width: 70%;
-            margin: auto;
-            h4 {
-                margin-left: 35px;
-            }
-        }
-    }
+  .socials {
+    justify-content: space-evenly;
 
-    @media screen and (min-width: 850px) {
-        div {
-            margin: 50px auto;
-            h4 {
-                margin-left: 60px
-            }
-        }
+    .icon {
+      background-color: #d6d7c5;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+      cursor: pointer;
     }
+  }
 `;

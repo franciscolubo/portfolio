@@ -1,141 +1,55 @@
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
-import { CONTAINER_CONTACT, FormContact, TitleContact } from "./styles/Styled-Contact";
-
-const validations = (form) => {
-  let Vname = false,
-    Vemail = false,
-    Vmessage = false,
-    errorName = document.getElementById("error-name").style,
-    errorEmail = document.getElementById("error-email").style,
-    errorMessage = document.getElementById("error-message").style;
-  
-  const errorBorder = '2px solid #FF0000'
-  const validBorder = '1px solid #b2b2b2'
-  if (form.name === "") errorName.setProperty('border', errorBorder)
-  else {
-    Vname = true;
-    errorName.setProperty('border', validBorder)
-  }
-  if (form.email === "") errorEmail.setProperty('border', errorBorder)
-  else {
-    Vemail = true;
-    errorEmail.setProperty('border', validBorder)
-  }
-  if (form.message === "") errorMessage.setProperty('border', errorBorder)
-  else {
-    Vmessage = true;
-    errorMessage.setProperty('border', validBorder)
-  }
-
-  if (Vname === true && Vemail === true && Vmessage === true) return true;
-  else {
-    Swal.fire({
-      icon: "error",
-      title: "Faltan campos por rellenar"
-    })
-    return false
-  }
-};
-
-export default function Contact() {
-  const form = useRef();
-  const [newForm, setNewForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    setNewForm({
-      ...newForm,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (validations(newForm)) {
-      emailjs
-        .sendForm(
-          "service_s2j1noc",
-          "template_sv9d9bv",
-          form.current,
-          "teVfzv56EIizRrm32"
-        )
-        .then(
-          (result) => {
-            Swal.fire({
-              icon: "success",
-              title: "¡Email enviado!",
-              text: "Gracias por contactarme",
-            });
-          },
-          (err) => {
-            Swal.fire({
-              icon: "error",
-              title: "Algo ha ido mal",
-            });
-            err()
-          }
-        );
-    }
-  };
-
+import { ContainerContact } from "./styles/Styled-Contact";export default function Contact() {
   return (
-    <>
-      <TitleContact>
-        <h2>Contacto</h2>
-      </TitleContact>
-    <CONTAINER_CONTACT>
+    <ContainerContact id="seccion-contact">
+      <div className="title-contact">
+        <h2>Contactame</h2>
+      </div>
+      <div className="text-information">
         <p>
-          Puedes contactarme enviando un mensaje por aqui o directamente en mi
-          correo <a 
-          target="_blank" rel="noreferrer"
-          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkNFmDzwjScnTDpRJwHDbHpDbDlBDqbVJwxqzLbgfjljskQXMfcQKsXxGWZPqkpDglSGf"
-          >lupanchox@gmail.com
-          </a>
+          Si tienes algun proyecto y te gustaria contratarme o algo en lo que
+          podamos trabajar juntos, no dudes en contactarme.
         </p>
-        <FormContact ref={form} onSubmit={(e) => sendEmail(e)}>
+        {/* <img /> */}
+      </div>
+      <div className="inputs">
+        <label className="name-completly">
+          <p>
+            Nombre completo <strong>*</strong>
+          </p>
           <div>
             <div>
-              <label>Nombre</label>
-              <input type="text" name="name" id="error-name" onChange={(e) => handleChange(e)} placeholder="Escribe tu nombre"/>
+              <input />
+              <span>Nombre</span>
             </div>
-            <div>
-              <label>Email</label>
-              <input
-                type="email"
-                name="email"
-                onChange={(e) => handleChange(e)}
-                placeholder="Escribe tu email"
-                id="error-email"
-              />
+            <div className="apellido">
+              <input />
+              <span>Apellido</span>
             </div>
           </div>
-          
-          <div>
-            <div>
-              <label>Mensaje</label>
-              <textarea
-                name="message"
-                cols="10"
-                rows="5"
-                onChange={(e) => handleChange(e)}
-                placeholder="Deja un mensaje"
-                id="error-message"
-                ></textarea>
-            </div>
-          </div>
-          <div className="button">
-            <button type="submit">
-              ¡Enviar!
-            </button>
-          </div>
-        </FormContact>
-    </CONTAINER_CONTACT>
-  </>
+        </label>
+        <label>
+          <p>
+            Correo electronico <strong>*</strong>
+          </p>
+          <input />
+        </label>
+
+        <label>
+          <p>
+            Asunto <strong>*</strong>
+          </p>
+          <input />
+        </label>
+        <label>
+          <p>
+            Mensaje <strong>*</strong>
+          </p>
+          <textarea />
+        </label>
+      </div>
+      <div className="button">
+        <button>ENVIAR</button>
+      </div>
+    </ContainerContact>
   );
 }

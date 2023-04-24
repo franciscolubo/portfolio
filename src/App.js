@@ -1,18 +1,16 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import SocialMedia from "./Components/SocialMedia";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <About />
+      <Skills />
       <Projects />
       <Contact />
-      <SocialMedia />
     </div>
   );
 }

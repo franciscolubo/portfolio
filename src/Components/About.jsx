@@ -1,20 +1,38 @@
-import { CONTAINER_ABOUT } from "./styles/Styled-About";
-
+import { ContainerPrimary } from "./styles/Styled-About";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { GrDocumentPdf } from "react-icons/gr";
 export default function About() {
-  return (
-    <CONTAINER_ABOUT>
-        <div>
-          <h4>Hola, soy Francisco Lubo</h4>
-          <h1>
-            <strong>Full-Stack</strong> Web Developer
-          </h1>
-        </div>
+  function goToContact() {
+    document.getElementById("seccion-contact").scrollIntoView();
+  }
 
+  return (
+    <ContainerPrimary>
+      <div className="title">
+        <h1>Full Stack Developer</h1>
+      </div>
+      <div className="about">
         <p>
-        Tomo este espacio para contar un poco quien soy. Vivo en Argentina y estudio sistemas de la informacion, me encanta todo lo relacionado a la tecnologia, ya sea tanto hardware como software, cuando escribi mis primeras lineas de codigo recuerdo que no entendia muy bien lo que hacia pero gracias a la experiencia que he adquirido mediante el estudio y esfuerzo hoy en dia puedo decir que soy un programador, un Full-Stack Web Developer.
-        <br /><br />
-        Pase por el bootcamp de Henry, luego de muchos esfuerzo y estudio, con algunos proyectos hechos independientemente en los cuales pude seguir mejorando, mas la presion que el bootcamp ejercia, me siento preparado para obtener mi primer empleo formal en el mundo de IT, en el cual pueda seguir desarrollandome y mejorando dia a dia como programador.
+          Mi nombre es <strong className="strong-name">Francisco Lubo</strong> y
+          tengo 22 años, soy un joven profesional entusiaste en el mundo de la
+          programación, dedicado al area web mas exactamente al{" "}
+          <strong className="strong-backend">backend</strong>
         </p>
-    </CONTAINER_ABOUT>
+      </div>
+      <div className="socials">
+        <div className="icon">
+          <FaLinkedinIn />
+        </div>
+        <div className="icon">
+          <FaGithub />
+        </div>
+        <div className="icon">
+          <GrDocumentPdf />
+        </div>
+      </div>
+      <div className="contact">
+        <button onClick={goToContact}>¡Contactame!</button>
+      </div>
+    </ContainerPrimary>
   );
 }
