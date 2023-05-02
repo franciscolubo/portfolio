@@ -6,85 +6,138 @@ export const ContainerContact = styled.div`
 
   div {
     width: 80%;
-
-    h2 {
-      color: #a5924e;
-      letter-spacing: 0.8px;
-      font-weight: 400;
-      margin: 10px 0;
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 13px;
-      letter-spacing: 0.7px;
-      color: #d6d7c5;
-      margin-bottom: 15px;
-    }
-  }
-
-  .title-contact {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-  }
+    align-content: center;
+    div {
+      text-align: center;
+      img {
+        display: none;
+      }
 
-  .text-information {
-    text-align: center;
+      p {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   .inputs {
+    padding-top: 50px;
     label {
-      display: flex;
-      flex-direction: column;
-      color: #d6d7c5;
-      margin: 15px 0;
-
+      width: 100%;
+      margin-bottom: 10px;
       p {
-        height: 5px;
+        color: #d6d7c5;
         strong {
           color: #d97e2a;
         }
       }
 
-      span {
-        font-size: 10px;
-        color: grey;
+      input {
+        width: 100%;
       }
 
       textarea {
-        max-width: 100%;
+        resize: none;
         min-width: 100%;
-        min-height: 50px;
-        max-height: 100px;
+        min-height: 80px;
+      }
+      .error-span {
+        color: transparent;
+        font-size: 0.7rem;
       }
     }
 
     .name-completly {
       div {
-        display: flex;
         width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-
         div {
-          display: flex;
           flex-direction: column;
+          align-items: start;
           width: 48%;
+          .help {
+            color: #d6d7c5;
+            font-size: 0.7rem;
+          }
         }
       }
     }
-  }
-  .button {
-    display: flex;
-    justify-content: center;
 
-    button {
-      background-color: #131313;
-      border: none;
-      color: #d9d9d9;
-      width: 60px;
-      height: 25px;
+    .button {
+      /*** ESTILOS BOTÓN SLIDE RIGHT ***/
+      button {
+        background-color: transparent;
+        color: #000;
+        border: 2px solid #181818;
+        padding: 16px 20px;
+        border-radius: 3px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #d6d7c5;
+      }
+      button::after {
+        content: "";
+        background: #181818;
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: -100%;
+        transition: all 0.35s;
+      }
+      button:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all 0.35s;
+      }
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    div {
+      div {
+        img {
+          display: block;
+          width: 230px;
+          height: 230px;
+        }
+      }
     }
 
-    margin-bottom: 20px;
+    .inputs {
+      margin-top: 30px;
+      label {
+        width: 90%;
+        input {
+          height: 23px;
+        }
+
+        textarea {
+          min-height: 120px;
+        }
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+    }
   }
 `;

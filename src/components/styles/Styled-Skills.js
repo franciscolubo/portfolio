@@ -1,4 +1,5 @@
-import styled from "styled-components";export const ContainerSkills = styled.div`
+import styled from "styled-components";
+export const ContainerSkills = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,19 +8,18 @@ import styled from "styled-components";export const ContainerSkills = styled.div
   div {
     width: 80%;
     text-align: center;
-    h2 {
-      color: #a5924e;
-      letter-spacing: 0.8px;
-      font-weight: 400;
-      margin: 10px 0;
-      font-size: 20px;
-    }
   }
 
   .tree-techs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 700px) {
+    .tree-techs {
+      width: 60%;
+    }
   }
 `;
 
@@ -37,6 +37,16 @@ export const Skill = styled.div`
   }
 
   h5 {
+    margin-top: 3px;
     color: #d6d7c5;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: 700px) {
+    margin: 0px 10px;
+
+    h5 {
+      font-size: 1rem;
+    }
   }
 `;

@@ -1,16 +1,7 @@
-import styled from "styled-components";
-export const ContainerProjects = styled.div`
+import styled from "styled-components";export const ContainerProjects = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  h2 {
-    color: #a5924e;
-    letter-spacing: 0.8px;
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 20px;
-  }
 
   div {
     display: flex;
@@ -18,38 +9,115 @@ export const ContainerProjects = styled.div`
     align-items: center;
     text-align: center;
     width: 80%;
+    border: 0.5px solid #000;
+    border-radius: 7px;
+    margin: 30px 0;
+    background-color: #a1a1a10d;
 
-    margin: 40px 0;
     img {
-      width: 90%;
+      width: 100%;
       height: 200px;
+      border-radius: 7px 7px 0 0;
+    }
+    div {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      h4 {
+        color: #89887a;
+        margin: 15px 0;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+      }
+
+      p {
+        width: 90%;
+        height: 170px;
+        color: #d6d7c5;
+        letter-spacing: 0.7px;
+        font-size: 0.9rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          margin: 0 15px;
+
+          div {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: #d6d7c5;
+            transition: all 0.2s;
+
+            a {
+              text-decoration: none;
+              color: #000;
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          div:hover {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 430px) {
+    div {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    div {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 560px) {
+    div {
+      width: 55%;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .par {
+      flex-direction: row;
     }
 
-    h4 {
-      color: #89887a;
-      margin: 15px 0;
-      letter-spacing: 1px;
-    }
-
-    p {
-      color: #d6d7c5;
-      letter-spacing: 0.7px;
+    .impar {
+      flex-direction: row-reverse;
     }
 
     div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      width: 80%;
+      img {
+        width: 45%;
+        height: 250px;
+        border-radius: 0px;
+      }
 
-      .icon {
-        background-color: #d6d7c5;
-        width: 25px;
-        height: 25px;
-        display: flex;
-        align-items: center;
-        border-radius: 50px;
-        cursor: pointer;
-        margin: 0 15px;
+      div {
+        h4 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }

@@ -6,14 +6,15 @@
       "image": "../../pfecommerce.png",
       "altImage": "pf e-commerce image not found",
       "altVideo": "pf e-commerce video not found",
-      "github": "./github"
+      "deploy": "https://ecommerce-project-sigma.vercel.app/products",
+      "github": "https://github.com/nmacenco/Ecommerce-Project"
     },
     {
       "title": "Bus App",
       "description": "Una pequeña app la cual desarrolle con React Native por dos razones, primero que nada queria aprender una tecnologica que venia viendo hace un tiempo, el desarrollar para mobile y la otra razon es que queria hacer algo funcional, por eso tome este proyecto, con el cual podria usar cada vez que viajara de mi ciudad a la otra.",
       "image": "../../appbus.png",
       "altImage": "app bus image not found",
-      "github": "./github"
+      "github": "https://github.com/franciscolubo/app-bus"
     },
     {
       "title": "Ecommerce Test",
@@ -21,7 +22,7 @@
       "image": "../../ecommerVanilla.png",
       "altImage": "ecommerce test image not found",
       "deploy": "https://lustrous-elf-356761.netlify.app",
-      "github": "./github"
+      "github": "https://github.com/franciscolubo/bsale-client"
     },
     {
       "title": "PI - Api Food",
@@ -29,7 +30,7 @@
       "image": "../../pifood.png",
       "altImage": "pi food image not found",
       "deploy": "https://pi-food-client-nine.vercel.app",
-      "github": "./github"
+      "github": "https://github.com/franciscolubo/PI_Food_Henry"
     }
   ]
 }
