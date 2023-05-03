@@ -1,4 +1,5 @@
-export default function checkData(contact) {  const regexEmail =
+export default function checkData(contact) {
+  const regexEmail =
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
   const regexName = /^[A-Za-z]*$/;
   let itsOkay = true;
@@ -71,6 +72,6 @@ export default function checkData(contact) {  const regexEmail =
     const errorMsg = document.getElementById("mensaje");
     errorMsg.style.color = "transparent";
   }
-  console.log(itsOkay);
+
   return itsOkay;
 }
