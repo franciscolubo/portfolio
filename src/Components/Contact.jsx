@@ -4,6 +4,7 @@ import { Text, Title } from "./styles/Styled-General";
 import { useState } from "react";
 import checkData from "../helpers/checkData";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 export default function Contact() {
   const [contact, setContact] = useState({
     nombre: "",
@@ -22,7 +23,7 @@ export default function Contact() {
   }
 
   function sendMail() {
-    if (true) {
+    if (checkData(contact)) {
       setContact({
         ...contact,
         nombre: "",
@@ -31,7 +32,23 @@ export default function Contact() {
         asunto: "",
         mensaje: "",
       });
+      const obj = {
+        name: `${contact.nombre} ${contact.apellido}`,
+        email: contact.correo,
+        message: contact.mensaje,
+        subject: contact.asunto,
+      };
 
+      emailjs
+        .send("service_s2j1noc", "template_sv9d9bv", obj, "teVfzv56EIizRrm32")
+        .then(
+          (result) => {
+            console.log(result);
+          },
+          (err) => {
+            console.log(err);
+          }
+        );
       Swal.fire({
         icon: "success",
         title: "Gracias por hacer contacto",
