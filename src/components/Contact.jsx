@@ -1,4 +1,5 @@
-import { ContainerContact } from "./styles/Styled-Contact";import astronaut from "../img/astronauta-saludando.png";
+import { ContainerContact } from "./styles/Styled-Contact";
+import astronaut from "../img/astronauta-saludando.png";
 import { Text, Title } from "./styles/Styled-General";
 import { useState } from "react";
 import checkData from "../helpers/checkData";
