@@ -24,14 +24,6 @@ export default function Contact() {
 
   function sendMail() {
     if (checkData(contact)) {
-      setContact({
-        ...contact,
-        nombre: "",
-        apellido: "",
-        correo: "",
-        asunto: "",
-        mensaje: "",
-      });
       const obj = {
         name: `${contact.nombre} ${contact.apellido}`,
         email: contact.correo,
@@ -50,6 +42,15 @@ export default function Contact() {
         icon: "success",
         title: "Gracias por hacer contacto",
         text: "Respondere tu mensaje en la brevedad",
+      });
+
+      setContact({
+        ...contact,
+        nombre: "",
+        apellido: "",
+        correo: "",
+        asunto: "",
+        mensaje: "",
       });
     } else {
       Swal.fire({
