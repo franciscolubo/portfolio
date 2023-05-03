@@ -1,5 +1,4 @@
-import { ContainerContact } from "./styles/Styled-Contact";
-import astronaut from "../img/astronauta-saludando.png";
+import { ContainerContact } from "./styles/Styled-Contact";import astronaut from "../img/astronauta-saludando.png";
 import { Text, Title } from "./styles/Styled-General";
 import { useState } from "react";
 import checkData from "../helpers/checkData";
@@ -39,16 +38,13 @@ export default function Contact() {
         subject: contact.asunto,
       };
 
-      emailjs
-        .send("service_s2j1noc", "template_sv9d9bv", obj, "teVfzv56EIizRrm32")
-        .then(
-          (result) => {
-            console.log(result);
-          },
-          (err) => {
-            console.log(err);
-          }
-        );
+      emailjs.send(
+        "service_s2j1noc",
+        "template_sv9d9bv",
+        obj,
+        "teVfzv56EIizRrm32"
+      );
+
       Swal.fire({
         icon: "success",
         title: "Gracias por hacer contacto",
