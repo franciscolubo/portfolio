@@ -31,18 +31,15 @@ export default function Contact() {
         subject: contact.asunto,
       };
 
-      emailjs.send(
-        "service_s2j1noc",
-        "template_sv9d9bv",
-        obj,
-        "teVfzv56EIizRrm32"
-      );
-
-      Swal.fire({
-        icon: "success",
-        title: "Gracias por hacer contacto",
-        text: "Respondere tu mensaje en la brevedad",
-      });
+      emailjs
+        .send("service_s2j1noc", "template_sv9d9bv", obj, "teVfzv56EIizRrm32")
+        .then(() => {
+          Swal.fire({
+            icon: "success",
+            title: "Gracias por hacer contacto",
+            text: "Respondere tu mensaje en la brevedad",
+          });
+        });
 
       setContact({
         ...contact,
