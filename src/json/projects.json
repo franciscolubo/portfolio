@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "title": "Perfil publico - Uils",
+      "description": "Perfil publico para conductores de distintas empresas de servicio para transporte (Uber, Cabify, etc.) el cual pueden utilizar para dar información a alguien en concreto, para el alquiler de vehículos ya sea una empresa o particular. Aplicación desarrollada para la pasantía de la empresa Uils, permite seleccionar la información a mostrar, bloquear el perfil, utilizar una contraseña y otras funcionalidades varias.",
+      "image": "../../perfil-publico.png",
+      "altImage": "perfil publico image not found",
+      "altVideo": "pf e-commerce video not found"
+    },
+    {
       "title": "PF - E-commerce",
       "description": "E-commerce de productos electronicos realizado para el bootcamp de Henry (Proyecto final en grupo), realizado con otras seis personas. Posee un CRUD completo, ademas de filtros, autenticacion (tambien con Google), pagar, entre otras cosas.",
       "image": "../../pfecommerce.png",
